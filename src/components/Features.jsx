@@ -1,43 +1,97 @@
 import React from "react";
 import "../styles/Features.css";
-import featuresImage from "../assets/features/features.webp";
-import featuresBg from "../assets/features/features-bg.webp";
-import featureimg from "../assets/home_banner/feature1.jpg";
+import featureIcon1 from "../assets/feature-icon/feature-five-icon1.webp";
+import featureIcon2 from "../assets/feature-icon/feature-five-icon2.webp";
+import featureIcon3 from "../assets/feature-icon/feature-five-icon3.webp";
+import featureIcon4 from "../assets/feature-icon/feature-five-icon4.webp";
+import rectangleDots from "../assets/feature-icon/rectangle-dots-two.webp";
 
 export default function Features() {
   return (
     <section className="features-section">
       <div className="container">
-        <div className="features-wrapper">
-          <div className="row">
-            <div className="col-lg-12">
-              <h2 className="features-title">
-                <span className="title-green">Learn</span> <span className="title-orange">Telugu</span> <br />
-                <span className="title-green">Master</span> <span className="title-orange">the Language</span>
-              </h2>
-              <p className="features-description">
-                Explore our comprehensive Telugu learning platform designed for all skill levels. 
-                Join expert-led courses and master the beautiful Telugu language at your own pace.
+        {/* Top row: heading + paragraph (Why Learn Us) */}
+        <div className="row large-gap mb-30">
+          <div className="col-lg-6">
+            <div className="feature-six-left">
+              <div className="section-title">
+                <span className="sub-title-three">Why Learn Telugu</span>
+                <h2>
+                  Experience The Best <span className="title-accent">Telugu</span> Learning Platform
+                </h2>
+                {/* Rectangle dots shape near section title */}
+                <img className="hero-rectangle" src={rectangleDots} alt="Shape" />
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-5">
+            <div className="feature-six-right">
+              <p>
+                Master the beautiful Telugu language through our comprehensive online courses designed for all skill levels.
+                Our expert instructors provide interactive lessons that make learning Telugu engaging and effective. Join
+                thousands of students who have successfully achieved fluency in reading, writing, and speaking Telugu.
               </p>
             </div>
           </div>
-          <div className="row justify-content-end">
-            <div className="col-lg-11">
-              <div className="features-image">
-                <img src={featuresImage} width="1061" height="387" alt="features" />
-                <div className="features-mask">
-                  <div 
-                    className="features-mask-image bg_cover" 
-                    style={{ backgroundImage: `url(${featureimg})` }}
-                  ></div>
-                  <div className="features-mask-content">
-                    <p>Telugu Courses</p>
-                    <p>Expert Instructors</p>
-                    <p>Learn Online</p>
-                  </div>
+        </div>
+
+        {/* Bottom row: four feature cards */}
+        <div className="row features-cards">
+          <div className="col-lg-3 col-sm-6">
+            <article className="feature-six-item mt-30">
+              <div className="content">
+                <div className="icon">
+                  <img src={featureIcon1} alt="Exclusive Courses" />
                 </div>
+                <h5>Comprehensive Telugu Courses</h5>
+                <p>
+                  Structured curriculum covering beginner to advanced levels with interactive lessons and practice exercises
+                </p>
               </div>
-            </div>
+            </article>
+          </div>
+
+          <div className="col-lg-3 col-sm-6">
+            <article className="feature-six-item">
+              <div className="content">
+                <div className="icon">
+                  <img src={featureIcon2} alt="Creative Advisors" />
+                </div>
+                <h5>Expert Telugu Instructors</h5>
+                <p>
+                  Learn from native speakers and certified teachers with years of experience in Telugu language instruction
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div className="col-lg-3 col-sm-6">
+            <article className="feature-six-item mt-30">
+              <div className="content">
+                <div className="icon">
+                  <img src={featureIcon3} alt="Certifications" />
+                </div>
+                <h5>Telugu Language Certificates</h5>
+                <p>
+                  Earn recognized certificates upon course completion to showcase your Telugu language proficiency
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div className="col-lg-3 col-sm-6">
+            <article className="feature-six-item">
+              <div className="content">
+                <div className="icon">
+                  <img src={featureIcon4} alt="Video Tutorials" />
+                </div>
+                <h5>Interactive Video Lessons</h5>
+                <p>
+                  Access high-quality video tutorials with pronunciation guides and real-world conversation examples
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </div>

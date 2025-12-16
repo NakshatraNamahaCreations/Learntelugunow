@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+.promotional-cards-section {
+  /* padding: 100px 0; */
+  background: #ffffff;
+  top:50px;
+}
+
+.promotional-cards-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.promotional-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Advertise Item Base Styles */
+.advertise-item {
+  z-index: 1;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 24px 32px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: auto;
+}
+
+.advertise-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Card - Instructor (Green) */
+.promo-card-instructor {
+  background: rgba(0, 204, 131, 0.1);
+}
+
+/* Right Card - Online Courses (Orange) */
+.promo-card-courses {
+  background: rgba(255, 152, 0, 0.1);
+}
+
+/* Animation Classes */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.delay-0-2s {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Card Content */
+.promo-card-content {
+  flex: 1;
+  z-index: 2;
+  max-width: 55%;
+}
+
+.promo-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.promo-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0 0 20px 0;
+}
+
+/* Buttons */
+.promo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.promo-btn-green {
+  background: #0ea56a;
+  color: #ffffff;
+}
+
+.promo-btn-green:hover {
+  background: #0d8f5a;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(14, 165, 106, 0.3);
+}
+
+.promo-btn-orange {
+  background: #ff9800;
+  color: #ffffff;
+}
+
+.promo-btn-orange:hover {
+  background: #e68900;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+.promo-btn i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.promo-btn:hover i {
+  transform: translateX(3px);
+}
+
+/* Card Image */
+.promo-card-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+  max-width: 40%;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.promo-card-image img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  display: block;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: transform 0.5s ease, scale 0.5s ease;
+  transform-origin: center;
+}
+
+.advertise-item:hover .promo-card-image img {
+  transform: scale(1.15);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .promotional-cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .advertise-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .promo-card-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .promo-card-image {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .promo-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotional-cards-section {
+    padding: 60px 0;
+  }
+
+  .advertise-item {
+    padding: 30px 25px;
+  }
+
+  .promo-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .promo-description {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .promo-btn {
+    padding: 12px 24px;
+    font-size: 13px;
+  }
+}
+

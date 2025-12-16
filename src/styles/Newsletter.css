@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.newsletter-video-part {
+  position: relative;
+  width: 100%;
+  
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.newsletter-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 35px;
+  position: relative;
+  min-height: 600px;
+  overflow: visible;
+}
+
+/* Left Section - Video Background */
+.newsletter-left {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  min-height: 600px;
+}
+
+.newsletter-video-part.overlay {
+  position: relative;
+  width: 75%;
+  max-width: 850px;
+  height: 500px;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.newsletter-video-part.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.p-100 {
+  padding: 100px;
+}
+
+.rp-50 {
+  padding-right: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, .bg-text, .coach-filter li, .newsletter-radios {
+  font-weight: 700;
+  color: #262d3d;
+  font-family: "Raleway", sans-serif;
+}
+
+.bg-text {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 355px;
+  font-weight: 800;
+  line-height: 0.7;
+  opacity: 0.04;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+
+/* Decorative "Video" text - specific styling for newsletter section */
+.newsletter-video-part .bg-text {
+  right: 50% !important;
+  bottom: 50% !important;
+  opacity: 0.2 !important;
+  top:100px !important;
+  left:-250px !important;
+  font-size: 250px !important;
+  color: transparent !important;
+  text-transform: capitalize !important;
+  -webkit-text-stroke: 1px white;
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  transform: translate(50%, 50%) !important;
+  z-index: 2 !important;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  pointer-events: none;
+  line-height: 0.7;
+}
+
+/* Notification card */
+.notification {
+  position: absolute;
+  left: 16%;
+  bottom: 15%;
+  max-width: 180px;
+  padding: 25px 20px 15px;
+  z-index: 3;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.notification img:first-of-type {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 10px;
+  position: relative;
+}
+
+.notification .content {
+  margin-top: 8px;
+}
+
+.notification .content h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.3;
+}
+
+.green-stroke {
+  position: absolute;
+  bottom: -7px;
+  /* top: 0px; */
+  left: -5px;
+  width: 120px;
+  height: auto;
+  z-index: -1;
+  transform: rotate(-5deg);
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Animation classes */
+.wow {
+  visibility: visible;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.delay-0-2s {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Newsletter Card - Positioned on right side of image */
+.newsletter-card {
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  top: 15%;
+  transform: translateY(-50%) translateX(-20px);
+  background: #07294d;
+  color: #fff;
+  padding: 35px;
+  border-radius: 3px;
+  max-width: 400px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.newsletter-content .subtitle {
+  font-size: 15px;
+  opacity: 0.8;
+  display: block;
+}
+
+.newsletter-content .title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 12px 0;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.newsletter-content .desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.update-options {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.option input {
+  display: none;
+}
+
+.option .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #00D084;
+  background: white;
+  margin-right: 8px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.option input:checked + .checkmark::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #00D084;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.subscribe-box {
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.email-field {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.email-field .icon {
+  font-size: 16px;
+  color: #555;
+  margin-right: 8px;
+}
+
+.email-field input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.btn-signup {
+  background: #00D084;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.btn-signup:hover {
+  opacity: 0.9;
+}
+
+.contact-features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.contact-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.contact-feature-item i {
+  color: #00D084;
+  font-size: 16px;
+}
+
+.btn-contact-us {
+  display: inline-block;
+  background: #fff;
+  color: #00D084;
+  
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.btn-contact-us:hover {
+  background: #00D084;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 208, 132, 0.4);
+}
+
+.custom-control {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+}
+
+.custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0;
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.custom-control-label::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0ea56a;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.custom-control-input:checked ~ .custom-control-label::after {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: #0ea56a;
+  border-radius: 50%;
+}
+
+/* Newsletter Email Input */
+.newsletter-email {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.newsletter-email label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background: #ffffff;
+  border-radius: 8px 0 0 8px;
+  color: #999;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.newsletter-email input {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  background: #ffffff;
+  border-radius: 0;
+  font-size: 15px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+.newsletter-email input::placeholder {
+  color: #999;
+}
+
+.theme-btn {
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #0ea56a, #00cc83);
+  color: #ffffff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+}
+
+.theme-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(14, 165, 106, 0.4);
+}
+
+.theme-btn i {
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .newsletter-card {
+    width: 450px;
+    max-width: 50%;
+    padding: 50px;
+  }
+
+  .newsletter-content .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter-video-part {
+    padding: 60px 0;
+  }
+
+  .newsletter-video-part.overlay {
+    min-height: 400px;
+  }
+
+  .newsletter-video-part .bg-text {
+    font-size: 200px;
+  }
+
+  .notification {
+    bottom: 40px;
+    left: 20px;
+    padding: 15px 20px;
+  }
+
+  .newsletter-card {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 30px;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 20px auto 0;
+  }
+
+  .newsletter-content .title {
+    font-size: 28px;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+  }
+
+  .email-field {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .btn-signup {
+    width: 100%;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-content .title {
+    font-size: 24px;
+  }
+
+  .newsletter-video-content p {
+    font-size: 14px;
+  }
+
+  .notification {
+    min-width: 160px;
+    padding: 12px 15px;
+  }
+
+  .notification img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .newsletter-video-content {
+    padding: 30px 20px;
+  }
+}
+
