@@ -18,7 +18,7 @@ export default function Features() {
                 <span className="sub-title-three">Why Learn Telugu</span>
                 <h2>
                   Experience The Best <span className="title-accent">Telugu</span> Learning Platform
-                </h2>
+              </h2>
                 {/* Rectangle dots shape near section title */}
                 <img className="hero-rectangle" src={rectangleDots} alt="Shape" />
               </div>
@@ -64,7 +64,7 @@ export default function Features() {
                 </p>
               </div>
             </article>
-          </div>
+                  </div>
 
           <div className="col-lg-3 col-sm-6">
             <article className="feature-six-item mt-30">
@@ -90,7 +90,7 @@ export default function Features() {
                 <p>
                   Access high-quality video tutorials with pronunciation guides and real-world conversation examples
                 </p>
-              </div>
+            </div>
             </article>
           </div>
         </div>

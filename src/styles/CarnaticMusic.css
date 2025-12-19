@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* ---------------- HERO SECTION ---------------- */
+
+.carnatic-hero-section {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carnatic-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.carnatic-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.carnatic-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.45)
+  );
+}
+
+.carnatic-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.carnatic-hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 20px;
+}
+
+.carnatic-hero-description {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* ---------------- ABOUT COURSE SECTION ---------------- */
+
+.carnatic-about-section {
+  width: 100%;
+  padding: 100px 0;
+  background-image: url("/layer-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Rotating circle animation - top right */
+.carnatic-about-circle-dots {
+  position: absolute;
+  top: 60px;
+  right: 90px;
+  z-index: 0;
+  max-width: 200px;
+  height: auto;
+  -webkit-animation: 10s rotated_circle infinite linear;
+  animation: 10s rotated_circle infinite linear;
+}
+
+@keyframes rotated_circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.carnatic-about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.carnatic-about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.carnatic-about-section .col-lg-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.carnatic-about-content {
+  padding-right: 20px;
+}
+
+.carnatic-about-section .section-title {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.carnatic-about-section .carnatic-about-content .section-title .sub-title-two,
+.carnatic-about-section .section-title .sub-title-two,
+.carnatic-about-content .section-title .sub-title-two,
+.carnatic-about-section .sub-title-two {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+  display: inline-block !important;
+  color: #0ea56a !important;
+  font-family: "Raleway", sans-serif !important;
+  background: none !important;
+  background-image: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #0ea56a !important;
+  background-clip: unset !important;
+}
+
+.carnatic-about-section .section-title h2 {
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: 700;
+  color: #262d3d !important;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  text-align: left;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #262d3d !important;
+  background-clip: unset !important;
+  animation: none !important;
+}
+
+.carnatic-about-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.carnatic-about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: 'Exo', sans-serif;
+}
+
+.carnatic-show-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #0ea56a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carnatic-show-more-btn:hover {
+  background: #00cc83;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 106, 0.4);
+}
+
+.carnatic-show-more-btn i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.carnatic-buttons-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.carnatic-book-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #ff9800;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carnatic-book-demo-btn:hover {
+  background: #f57c00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+}
+
+.carnatic-about-image {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.carnatic-about-image img {
+  width: 500px;
+  height: 500px;
+  left: -50px;
+  display: block;
+  object-fit: cover;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 992px) {
+  .carnatic-about-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .carnatic-about-section .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .carnatic-about-content {
+    padding-right: 0;
+  }
+
+  .carnatic-about-section .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carnatic-hero-section {
+    height: 400px;
+  }
+
+  .carnatic-hero-title {
+    font-size: 42px;
+  }
+
+  .carnatic-hero-description {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .carnatic-about-section {
+    padding: 60px 0;
+  }
+
+  .carnatic-about-section .section-title h2 {
+    font-size: 28px;
+  }
+}
+

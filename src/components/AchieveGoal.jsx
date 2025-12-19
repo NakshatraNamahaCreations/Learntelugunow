@@ -80,6 +80,11 @@ export default function AchieveGoal() {
 
   return (
     <section className="achieve-goal-section">
+      <img 
+        className="achieve-goal-circle-dots" 
+        src="/circle-dots-two.webp" 
+        alt="Decorative circle" 
+      />
       <div className="container">
         <div className="achieve-goal-wrapper">
           {/* Left Column - Content */}
@@ -114,7 +119,7 @@ export default function AchieveGoal() {
               </li>
             </ul>
             <a href="#courses" className="learn-more-btn">
-              LEARN MORE <span className="arrow">→</span>
+              LEARN MORE
             </a>
           </div>
 

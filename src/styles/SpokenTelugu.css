@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* ---------------- HERO SECTION ---------------- */
+
+.spoken-hero-section {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.spoken-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.spoken-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.spoken-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.45)
+  );
+}
+
+.spoken-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.spoken-hero-title {
+  font-size: 58px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 20px;
+}
+
+.spoken-hero-description {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* ---------------- ABOUT COURSE SECTION ---------------- */
+
+.spoken-about-section {
+  padding: 80px 0;
+  background: #ffffff;
+  position: relative;
+  background-image: url('/bg-shape-1.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto;
+}
+
+.spoken-about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.spoken-about-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.spoken-about-content {
+  flex: 1;
+}
+
+.spoken-about-heading {
+  margin-bottom: 30px;
+}
+
+.spoken-about-subtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ff9800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+.spoken-about-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+  margin: 0 0 25px 0;
+}
+
+.spoken-title-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.spoken-title-bg-image {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  z-index: -1;
+}
+
+.spoken-about-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.spoken-about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.spoken-what-you-learn {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #e5e5e5;
+}
+
+.spoken-what-you-learn h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.spoken-learn-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.spoken-learn-list li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.spoken-learn-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0ea56a;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.spoken-show-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #0ea56a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.spoken-show-more-btn:hover {
+  background: #00cc83;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 106, 0.4);
+}
+
+.spoken-show-more-btn i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.spoken-buttons-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.spoken-book-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #ff9800;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.spoken-book-demo-btn:hover {
+  background: #f57c00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+}
+
+.spoken-about-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.spoken-about-image img {
+  width: 110%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 150px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+  .spoken-hero-section {
+    height: 400px;
+  }
+
+  .spoken-hero-title {
+    font-size: 42px;
+  }
+
+  .spoken-hero-description {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .spoken-about-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .spoken-about-title {
+    font-size: 32px;
+  }
+
+  .spoken-about-image {
+    max-width: 100%;
+  }
+
+  .spoken-about-section {
+    padding: 60px 0;
+  }
+}
+

@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* ---------------- HERO SECTION ---------------- */
+
+.reading-writing-hero-section {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reading-writing-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.reading-writing-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.reading-writing-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.45)
+  );
+}
+
+.reading-writing-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.reading-writing-hero-title {
+  font-size: 58px !important;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 20px;
+}
+
+.reading-writing-hero-description {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* ---------------- ABOUT COURSE SECTION ---------------- */
+
+.reading-writing-about-section {
+  width: 100%;
+  padding: 100px 0;
+  background-image: url("/layer-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Rotating circle animation - top right */
+.reading-writing-about-circle-dots {
+  position: absolute;
+  top: 120px;
+  right: 90px;
+  z-index: 0;
+  max-width: 200px;
+  height: auto;
+  -webkit-animation: 10s rotated_circle infinite linear;
+  animation: 10s rotated_circle infinite linear;
+}
+
+@keyframes rotated_circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.reading-writing-about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.reading-writing-about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.reading-writing-about-section .col-lg-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.reading-writing-about-content {
+  padding-right: 20px;
+}
+
+.reading-writing-about-section .section-title {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.reading-writing-about-section .reading-writing-about-content .section-title .sub-title-two,
+.reading-writing-about-section .section-title .sub-title-two,
+.reading-writing-about-content .section-title .sub-title-two,
+.reading-writing-about-section .sub-title-two {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+  display: inline-block !important;
+  color: #0ea56a !important;
+  font-family: "Raleway", sans-serif !important;
+  background: none !important;
+  background-image: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #0ea56a !important;
+  background-clip: unset !important;
+}
+
+.reading-writing-about-section .section-title h2 {
+  text-transform: capitalize;
+  font-size: 45px;
+  font-weight: 700;
+  color: #262d3d !important;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  text-align: left;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #262d3d !important;
+  background-clip: unset !important;
+  animation: none !important;
+}
+
+.reading-writing-about-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.reading-writing-about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 20px;
+  font-family: 'Exo', sans-serif;
+}
+
+.reading-writing-about-text p strong {
+  color: #262d3d;
+  font-weight: 700;
+}
+
+.reading-writing-what-you-learn {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #e5e5e5;
+}
+
+.reading-writing-what-you-learn h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.reading-writing-learn-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.reading-writing-learn-list li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.reading-writing-learn-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0ea56a;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.reading-writing-show-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #0ea56a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reading-writing-show-more-btn:hover {
+  background: #00cc83;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(14, 165, 106, 0.4);
+}
+
+.reading-writing-show-more-btn i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.reading-writing-buttons-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.reading-writing-book-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #ff9800;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reading-writing-book-demo-btn:hover {
+  background: #f57c00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+}
+
+.reading-writing-about-image {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.reading-writing-about-image img {
+  width: 500px;
+  height: 500px;
+  left: -50px;
+  display: block;
+  object-fit: cover;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 992px) {
+  .reading-writing-about-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .reading-writing-about-section .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .reading-writing-about-content {
+    padding-right: 0;
+  }
+
+  .reading-writing-about-section .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reading-writing-hero-section {
+    height: 400px;
+  }
+
+  .reading-writing-hero-title {
+    font-size: 42px;
+  }
+
+  .reading-writing-hero-description {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .reading-writing-about-section {
+    padding: 60px 0;
+  }
+
+  .reading-writing-about-section .section-title h2 {
+    font-size: 28px;
+  }
+}
+

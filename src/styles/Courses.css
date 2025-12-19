@@ -95,31 +95,27 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  top:-80px;
-  margin-top: -40px !important;
   padding: 12px 28px;
   background: #0ea56a;
   color: #ffffff !important;
+
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  left:30px;
   border-radius: 6px;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* transform: translateY(-50px) translateX(-20px); */
 }
 
 .view-more-btn:hover {
   background: #0d8f5a;
-  transform: translateX(5px);
   box-shadow: 0 4px 12px rgba(14, 165, 106, 0.3);
+  /* transform: translateY(-50px) translateX(-20px); */
 }
 
 .view-more-btn i {
   font-size: 12px;
-  transition: transform 0.3s ease;
-}
-
-.view-more-btn:hover i {
-  transform: translateX(3px);
 }
 
 /* Row */

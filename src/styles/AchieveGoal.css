@@ -16,7 +16,32 @@
   width: 100%;
   padding: 100px 0;
   background-color: #ffffff;
+  background-image: url('/bg-shape-1.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.achieve-goal-circle-dots {
+  position: absolute;
+  top: 60px;
+  right: 90px;
+  z-index: 0;
+  max-width: 200px;
+  height: auto;
+  -webkit-animation: 10s rotated_circle infinite linear;
+  animation: 10s rotated_circle infinite linear;
+}
+
+@keyframes rotated_circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .achieve-goal-section .container {
@@ -41,14 +66,14 @@
 /* Background shape */
 .achieve-goal-left .bg-shape {
   position: absolute;
-  top: -80px;
-  left: -100px;
+  top: 0;
+  left: -150px;
   width: 700px;
   height: 700px;
   background-image: url('/bg-shape-1.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top left;
+  background-position: left center;
   z-index: -1;
   opacity: 0.5;
   pointer-events: none;
@@ -57,12 +82,12 @@
 
 /* Rotating circle animation */
 .achieve-goal-left .hero-circle {
-  left: 1080px;
+  left: 1090px;
   top: -50px;
   z-index: -1;
   position: absolute;
-  -webkit-animation: 35s rotated_circle infinite;
-  animation: 35s rotated_circle infinite;
+  -webkit-animation: 15s rotated_circle infinite;
+  animation: 15s rotated_circle infinite;
   max-width: 200px;
   height: auto;
 }
@@ -162,7 +187,7 @@
   align-items: center;
   gap: 8px;
   padding: 14px 32px;
-  border: 1px solid #e8e8e8;
+  border: 2px solid #00cc83;
   background: #ffffff;
   color: #111827;
   text-decoration: none;
@@ -183,6 +208,13 @@
 
 .achieve-goal-left .learn-more-btn .arrow {
   font-size: 16px;
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.achieve-goal-left .learn-more-btn:hover .arrow {
+  transform: translateX(4px);
 }
 
 .stage {
