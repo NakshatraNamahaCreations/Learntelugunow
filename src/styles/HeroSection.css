@@ -2,7 +2,7 @@
 .hb-root {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 750px;
   overflow: hidden;
   color: #fff;
   font-family: 'Poppins', sans-serif;
@@ -47,7 +47,7 @@
 .hb-left {
   display: flex;
   align-items: center;
-  transform: translate(65px, 40px);
+  transform: translate(65px, 90px);
 }
 .hb-center-text {
   display: flex;
@@ -108,7 +108,7 @@
 }
 
 .hb-btn-primary {
-  background: #0ea56a;
+  background: #EE7428;
   color: white;
 }
 
@@ -123,6 +123,7 @@
   position: relative;
   width: 100%;
   height: 420px;
+  transform: translateY(50px);
 }
 
 .hb-img {

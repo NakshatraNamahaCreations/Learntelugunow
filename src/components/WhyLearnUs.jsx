@@ -17,10 +17,10 @@ const WhyLearnUs = () => {
             <div className="why-learn-content">
               <div className="section-title">
                 <span className="sub-title-two">Why Learn Us</span>
-                <h2>Exclusive Online Course Provide Categories</h2>
+                <h2>Why Choose Learntelugunow</h2>
               </div>
               <p>
-                On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs
+                We provide comprehensive Telugu language education with expert instructors, flexible learning schedules, and personalized guidance to help you master Telugu effectively.
               </p>
               <div className="why-learn-feature">
                 <div className="row">
@@ -30,7 +30,7 @@ const WhyLearnUs = () => {
                         <img src="/icon10.webp" alt="Icon" />
                       </div>
                       <h4>Expert Advisors</h4>
-                      <p>Accutium doloremque lauda totarem aperiam eaque quaeo inventore veritatis quase</p>
+                      <p>Learn from certified Telugu instructors with years of teaching experience and native language expertise.</p>
                       <a href="#about" className="read-more color-two">
                         Read more <i className="fas fa-arrow-right"></i>
                       </a>
@@ -42,7 +42,7 @@ const WhyLearnUs = () => {
                         <img src="/icon11.webp" alt="Icon" />
                       </div>
                       <h4>Popular Courses</h4>
-                      <p>Quis autem vel eureh enderit voluptate velit esse nihlestiae consuatur veillum dolore</p>
+                      <p>Choose from a wide range of Telugu courses including reading, writing, speaking, and academic syllabus programs.</p>
                       <a href="#about" className="read-more color-two">
                         Read more <i className="fas fa-arrow-right"></i>
                       </a>

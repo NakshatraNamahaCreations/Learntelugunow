@@ -52,8 +52,7 @@ export default function AboutUs() {
                   </div>
                   <h3 className="feature-three__title">Courses From Experts</h3>
                   <div className="feature-three__desc">
-                    Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium dolor
-                    emque laudantium.
+                    Learn Telugu from certified native speakers with personalized guidance and interactive sessions.
                   </div>
                   <div className="feature-three__action">
                     <a className="btn-inline" href="#">Read More</a>
@@ -74,8 +73,7 @@ export default function AboutUs() {
                   </div>
                   <h3 className="feature-three__title feature-three__title--white">Over 500+ Quality Topics</h3>
                   <div className="feature-three__desc feature-three__desc--white">
-                    Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium dolor
-                    emque laudantium.
+                    Access comprehensive Telugu learning materials covering grammar, vocabulary, literature, and cultural context.
                   </div>
                   <div className="feature-three__action">
                     <a className="btn-inline btn-inline--white" href="#">Read More →</a>
@@ -94,17 +92,16 @@ export default function AboutUs() {
                   <div className="feature-three__icon">
                     <i className="fas fa-play"></i>
                   </div>
-                  <h3 className="feature-three__title">Program Video Update</h3>
+                  <h3 className="feature-three__title">Flexible Learning Schedule</h3>
                   <div className="feature-three__desc">
-                    Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium dolor
-                    emque laudantium.
+                    Study at your own pace with flexible online classes, live sessions, and recorded lessons available anytime.
                   </div>
                   <div className="feature-three__action">
                     <a className="btn-inline" href="#">Read More</a>
                   </div>
                 </div>
                 <div className="feature-three__image">
-                  <img src={cardImage3} alt="Program Video Update" />
+                  <img src={cardImage3} alt="Flexible Learning Schedule" />
                 </div>
               </div>
             </div>

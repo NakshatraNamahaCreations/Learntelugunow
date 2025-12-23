@@ -3,7 +3,7 @@
 .statistics-section {
   width: 100%;
   padding: 50px 0;
-  background-color: #07294d;
+  background-color: #5A4F4A;
   position: relative;
   overflow: hidden;
 }
@@ -84,7 +84,7 @@
 
 .statistics-icon {
   font-size: 65px;
-  color: #0ea56a;
+  color: #EE7428;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,7 +4,7 @@
 .course-categories-section {
   width: 100%;
   padding: 120px 0 110px;
-  background-color: #07294d;
+  background-color: #5A4F4A;
   position: relative;
 }
 
@@ -63,7 +63,7 @@
 
 .sub-title.sub-2 .tagline {
   display: inline-block;
-  background-color: #204ecf;
+  background-color: #EE7428;
   color: #ffffff;
   padding: 8px 20px;
   font-size: 14px;
@@ -99,7 +99,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #0ea56a;
+  color: #EE7428;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -130,7 +130,7 @@
 /* Category Card */
 .category-card {
   background: #ffffff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #EE7428;
   padding: 30px;
   position: relative;
   cursor: pointer;
@@ -139,7 +139,7 @@
 
 .category-card:hover,
 .category-card.active {
-  background: #2f80ed;
+  background: #EE7428;
 }
 
 /* Icon */
@@ -150,7 +150,7 @@
 .category-icon {
   width: 42px;
   height: 42px;
-  stroke: #2f80ed;
+  stroke: #EE7428;
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
@@ -167,7 +167,7 @@
 .category-card h4 {
   font-size: 18px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: #EE7428;
   margin: 0;
   font-family: 'Exo', sans-serif;
   transition: color 0.3s ease;
@@ -184,7 +184,7 @@
   top: 20px;
   right: 20px;
   font-size: 18px;
-  color: #2f80ed;
+  color: #EE7428;
   transition: color 0.3s ease;
   z-index: 2;
 }

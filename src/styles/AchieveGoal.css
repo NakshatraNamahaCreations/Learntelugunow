@@ -27,12 +27,13 @@
 .achieve-goal-circle-dots {
   position: absolute;
   top: 60px;
-  right: 90px;
+  right: 40px;
   z-index: 0;
   max-width: 200px;
   height: auto;
   -webkit-animation: 10s rotated_circle infinite linear;
   animation: 10s rotated_circle infinite linear;
+  filter: brightness(0) saturate(100%) invert(30%) sepia(8%) saturate(800%) hue-rotate(340deg) brightness(95%) contrast(90%);
 }
 
 @keyframes rotated_circle {
@@ -112,7 +113,7 @@
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #ff9800 !important;
+  color: #EE7428 !important;
   letter-spacing: 2px;
   margin-bottom: 15px;
 }
@@ -143,6 +144,7 @@
   background-size: contain;
   pointer-events: none;
   z-index: 0;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(2000%) hue-rotate(350deg) brightness(105%) contrast(95%);
 }
 
 .achieve-goal-left .description {
@@ -174,7 +176,7 @@
   justify-content: center;
   width: 24px;
   height: 24px;
-  background: #00cc83;
+  background: #EE7428;
   color: #ffffff;
   border-radius: 50%;
   font-size: 14px;
@@ -187,7 +189,7 @@
   align-items: center;
   gap: 8px;
   padding: 14px 32px;
-  border: 2px solid #00cc83;
+  border: 2px solid #EE7428;
   background: #ffffff;
   color: #111827;
   text-decoration: none;
@@ -200,10 +202,10 @@
 }
 
 .achieve-goal-left .learn-more-btn:hover {
-  border-color: #00cc83;
-  color: #00cc83;
+  border-color: #5A4F4A;
+  color: #5A4F4A;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 204, 131, 0.2);
+  box-shadow: 0 4px 12px rgba(90, 79, 74, 0.2);
 }
 
 .achieve-goal-left .learn-more-btn .arrow {
@@ -236,10 +238,10 @@
 /* Base images (use object-fit for clean crop) */
 .img-large {
   position: absolute;
-  right: -100px;
+  right: -140px;
   top: 20px;
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 340px;
   object-fit: cover;
   border-radius: 2px;
   box-shadow: var(--shadow);
@@ -249,8 +251,8 @@
   position: absolute;
   left: 145px;
   top: 160px;
-  width: 360px;
-  height: 320px;
+  width: 330px;
+  height: 300px;
   object-fit: cover;
   border-radius: 2px;
   box-shadow: var(--shadow);
@@ -286,7 +288,7 @@
 }
 
 .bg-green {
-  background-color: #00cc83;
+  background-color: #5A4F4A;
 }
 
 .text-white {
@@ -338,11 +340,11 @@
 .blue-card {
   position: absolute;
   right: 18px;
-  left:530px;
-  bottom: 130px;
+  left:490px;
+  bottom: 115px;
   width: 140px;
   height: 140px;
-  background: #ff9800;
+  background: #EE7428;
   color: var(--white);
   border-radius: 2px;
   display: flex;

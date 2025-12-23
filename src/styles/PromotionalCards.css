@@ -47,7 +47,7 @@
 
 /* Left Card - Instructor (Green) */
 .promo-card-instructor {
-  background: rgba(0, 204, 131, 0.1);
+  background: rgba(90, 79, 74, 0.15);
 }
 
 /* Right Card - Online Courses (Orange) */
@@ -142,14 +142,14 @@
 }
 
 .promo-btn-green {
-  background: #0ea56a;
+  background: #5A4F4A;
   color: #ffffff;
 }
 
 .promo-btn-green:hover {
-  background: #0d8f5a;
+  background: #4a423e;
   transform: translateX(5px);
-  box-shadow: 0 4px 12px rgba(14, 165, 106, 0.3);
+  box-shadow: 0 4px 12px rgba(90, 79, 74, 0.3);
 }
 
 .promo-btn-orange {

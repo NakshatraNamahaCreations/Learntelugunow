@@ -77,6 +77,7 @@
   background-size: contain;
   pointer-events: none;
   z-index: 0;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(2000%) hue-rotate(350deg) brightness(105%) contrast(95%);
 }
 
 .courses-description {
@@ -96,7 +97,7 @@
   align-items: center;
   gap: 8px;
   padding: 12px 28px;
-  background: #0ea56a;
+  background: #5A4F4A;
   color: #ffffff !important;
 
   text-decoration: none;
@@ -109,8 +110,8 @@
 }
 
 .view-more-btn:hover {
-  background: #0d8f5a;
-  box-shadow: 0 4px 12px rgba(14, 165, 106, 0.3);
+  background: #d96318;
+  box-shadow: 0 4px 12px rgba(238, 116, 40, 0.3);
   /* transform: translateY(-50px) translateX(-20px); */
 }
 
@@ -205,20 +206,20 @@
 }
 
 .coach-image .category.category-orange {
-  background: #ff9800;
+  background: #EE7428;
 }
 
 .coach-image .category.category-green {
-  background: #0ea56a;
+  background: #5A4F4A;
 }
 
 .coach-item:hover .coach-image .category.category-orange {
-  background: #e68900;
+  background: #d96318;
   transform: scale(1.05);
 }
 
 .coach-item:hover .coach-image .category.category-green {
-  background: #0d8f5a;
+  background: #4a423e;
   transform: scale(1.05);
 }
 
@@ -237,11 +238,11 @@
 }
 
 .coach-item:nth-child(odd) .coach-content {
-  border-top-color: #ff9800;
+  border-top-color: #EE7428;
 }
 
 .coach-item:nth-child(even) .coach-content {
-  border-top-color: #0ea56a;
+  border-top-color: #5A4F4A;
 }
 
 .coach-item:hover .coach-content {
@@ -260,11 +261,11 @@
 }
 
 .coach-item:nth-child(odd) .coach-content .label {
-  color: #ff9800;
+  color: #EE7428;
 }
 
 .coach-item:nth-child(even) .coach-content .label {
-  color: #0ea56a;
+  color: #5A4F4A;
 }
 
 .coach-content h4 {
@@ -281,11 +282,11 @@
 }
 
 .coach-item:nth-child(odd) .coach-content h4 a:hover {
-  color: #ff9800;
+  color: #EE7428;
 }
 
 .coach-item:nth-child(even) .coach-content h4 a:hover {
-  color: #0ea56a;
+  color: #5A4F4A;
 }
 
 .course-description {
@@ -336,7 +337,7 @@
 .price {
   font-size: 20px;
   font-weight: 700;
-  color: #0ea56a;
+  color: #5A4F4A;
 }
 
 /* Coach Footer */
@@ -363,7 +364,7 @@
 }
 
 .coach-footer li i {
-  color: #265fe8;
+  color: #EE7428;
   font-size: 14px;
 }
 

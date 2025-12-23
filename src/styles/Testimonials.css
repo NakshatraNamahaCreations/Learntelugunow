@@ -21,7 +21,7 @@
   position: relative;
   width: 100%;
   top:50px;
-  background: #07294d;
+  background: #5A4F4A;
   padding: 100px 0;
   overflow: hidden;
   font-family: "Nunito Sans", sans-serif;
@@ -127,7 +127,7 @@
 
 .testimonials-label {
   display: inline-block;
-  background: #0ea56a;
+  background: #EE7428;
   color: #ffffff;
   padding: 8px 20px;
   font-size: 12px;
@@ -229,7 +229,7 @@
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  background: #0ea56a;
+  background: #EE7428;
   color: #ffffff;
   padding: 8px 20px;
   font-size: 13px;

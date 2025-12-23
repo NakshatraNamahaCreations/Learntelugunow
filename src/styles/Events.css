@@ -114,16 +114,31 @@
 }
 
 .event-item-three:hover {
-  border-color: #ffb100;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-color: #EE7428;
+  box-shadow: 0 5px 20px rgba(238, 116, 40, 0.08);
+}
+
+.col-xl-6:nth-child(2) .event-item-three:hover {
+  border-right: 1px solid #EE7428;
+}
+
+.col-xl-6:nth-child(3) .event-item-three:hover,
+.col-xl-6:nth-child(4) .event-item-three:hover {
+  border-bottom: 1px solid #EE7428;
+  /* border-left: 1px solid #EE7428; */
+  /* border-top: 1px solid #EE7428; */
+}
+
+.col-xl-6:nth-child(4) .event-item-three:hover {
+  border-right: 1px solid #EE7428;
 }
 
 .event-item-three:hover .content h4 a {
-  color: #ffb100;
+  color: #EE7428;
 }
 
 .event-item-three:hover .details-link {
-  background: #ffb100;
+  background: #EE7428;
   color: #ffffff;
 }
 
@@ -153,7 +168,7 @@
   position: absolute;
   padding: 20px 1px 10px;
   height: calc(100% + 15px);
-  background: #0ea56a;
+  background: #5A4F4A;
   -webkit-writing-mode: vertical-lr;
   writing-mode: vertical-lr;
   text-orientation: mixed;
@@ -205,7 +220,7 @@
 }
 
 .event-item-three .content h4 a:hover {
-  color: #ffb100;
+  color: #EE7428 ;
 }
 
 /* Details Link */

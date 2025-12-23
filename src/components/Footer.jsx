@@ -27,7 +27,7 @@ const Footer = () => {
                 <div className="site-footer-widget">
                   <div className="site-footer-logo-section">
                     <div className="site-footer-brand">
-                      <img src="/bgremove_learn.png" alt="Learn Telugu Now" className="site-footer-logo-img" />
+                      <img src="/logo.png" alt="Learn Telugu Now" className="site-footer-logo-img" />
                     </div>
                     <p className="site-footer-logo-description">
                       Your trusted platform for mastering the beautiful Telugu language. Join thousands of students learning Telugu through our expert-led courses, interactive lessons, and comprehensive curriculum designed for all skill levels.

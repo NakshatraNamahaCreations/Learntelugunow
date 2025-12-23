@@ -92,7 +92,7 @@
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
-  color: #ff9800;
+  color: #EE7428;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
@@ -122,6 +122,7 @@
   max-width: 200px;
   height: auto;
   z-index: -1;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(2000%) hue-rotate(350deg) brightness(105%) contrast(95%);
 }
 
 .andhra-about-text {
@@ -168,7 +169,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #0ea56a;
+  color: #EE7428;
   font-weight: bold;
   font-size: 18px;
 }
@@ -178,7 +179,7 @@
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background: #0ea56a;
+  background: #5A4F4A;
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -190,9 +191,9 @@
 }
 
 .andhra-show-more-btn:hover {
-  background: #00cc83;
+  background: #4a423e;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(14, 165, 106, 0.4);
+  box-shadow: 0 4px 12px rgba(90, 79, 74, 0.4);
 }
 
 .andhra-show-more-btn i {
@@ -212,7 +213,7 @@
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background: #ff9800;
+  background: #EE7428;
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -224,9 +225,9 @@
 }
 
 .andhra-book-demo-btn:hover {
-  background: #f57c00;
+  background: #d96318;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(238, 116, 40, 0.4);
 }
 
 .andhra-about-image {
