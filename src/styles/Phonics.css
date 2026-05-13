@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* ---------------- HERO SECTION ---------------- */
+
+.phonics-hero-section {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.phonics-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.phonics-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.phonics-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.45)
+  );
+}
+
+.phonics-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.phonics-hero-title {
+  font-size: 58px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 20px;
+}
+
+.phonics-hero-description {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* ---------------- ABOUT COURSE SECTION ---------------- */
+
+.phonics-about-section {
+  padding: 80px 0;
+  background: #ffffff;
+  position: relative;
+  background-image: url('/bg-shape-1.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto;
+}
+
+.phonics-about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.phonics-about-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.phonics-about-content {
+  flex: 1;
+}
+
+.phonics-about-heading {
+  margin-bottom: 30px;
+}
+
+.phonics-about-subtitle {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #EE7428;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 15px;
+}
+
+.phonics-about-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111827;
+  margin: 0 0 25px 0;
+}
+
+.phonics-title-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.phonics-title-bg-image {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  z-index: -1;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(2000%) hue-rotate(350deg) brightness(105%) contrast(95%);
+}
+
+.phonics-about-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.phonics-about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.phonics-concepts-list,
+.phonics-learn-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.phonics-concepts-list li,
+.phonics-learn-list li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.phonics-concepts-list li::before,
+.phonics-learn-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #EE7428;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.phonics-what-you-learn {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #e5e5e5;
+}
+
+.phonics-what-you-learn h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.phonics-show-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #5A4F4A;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.phonics-show-more-btn:hover {
+  background: #4a423e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(90, 79, 74, 0.4);
+}
+
+.phonics-show-more-btn i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.phonics-buttons-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.phonics-book-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #EE7428;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.phonics-book-demo-btn:hover {
+  background: #d96318;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(238, 116, 40, 0.4);
+}
+
+.phonics-about-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.phonics-about-image img {
+  width: 110%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 150px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+  .phonics-hero-section {
+    height: 500px;
+  }
+
+  .phonics-hero-content {
+    padding: 0 20px;
+  }
+
+  .phonics-hero-title {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .phonics-hero-description {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .phonics-hero-section {
+    height: 550px;
+  }
+
+  .phonics-hero-content {
+    padding: 0 30px;
+  }
+
+  .phonics-hero-title {
+    font-size: 40px;
+    line-height: 1.3;
+  }
+
+  .phonics-hero-description {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .phonics-hero-section {
+    height: 450px;
+  }
+
+  .phonics-hero-content {
+    padding: 0 15px;
+  }
+
+  .phonics-hero-title {
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .phonics-hero-description {
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .phonics-about-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .phonics-about-title {
+    font-size: 32px;
+  }
+  .phonics-about-image img {
+    margin-top: 20px;
+  }
+  .phonics-about-image {
+    max-width: 100%;
+  }
+
+  .phonics-about-section {
+    padding: 60px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  /* Stack layout cleanly */
+  .phonics-about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* Center text content */
+  /* .phonics-about-content {
+    text-align: center;
+  } */
+
+  .phonics-about-subtitle {
+    font-size: 18px;
+  }
+
+  .phonics-about-title {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .phonics-title-bg-image {
+    max-width: 140px;
+    bottom: -6px;
+  }
+
+  /* Improve paragraph readability */
+  .phonics-about-text p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* Center CTA button */
+  .phonics-buttons-wrapper {
+    justify-content: center;
+  }
+
+  /* FIX IMAGE PROPERLY */
+  .phonics-about-image {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .phonics-about-image img {
+    width: 100%;
+    margin-top: 0;      /* remove desktop spacing */
+    border-radius: 12px;
+  }
+
+  /* Reduce section padding */
+  .phonics-about-section {
+    padding: 50px 0;
+  }
+}

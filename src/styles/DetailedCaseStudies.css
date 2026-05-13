@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@600;700&display=swap');
+
+.detailed-case-studies-section {
+  padding: 80px 0;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.detailed-case-studies-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+.detailed-cs-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.detailed-cs-label {
+  display: inline-block;
+  background: #EE7428;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.detailed-cs-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.detailed-cs-description {
+  font-size: 16px;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* List */
+.detailed-cs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Card */
+.detailed-cs-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 40px;
+  border: 2px solid rgba(30, 39, 68, 0.1);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+}
+
+/* Card Header */
+.detailed-cs-card-header {
+  margin-bottom: 12px;
+}
+
+.detailed-student-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1E2744;
+  margin-bottom: 5px;
+}
+
+.detailed-parent-name {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Meta */
+.detailed-cs-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+  background: rgba(0, 204, 131, 0.06);
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.detailed-cs-meta span {
+  color: #374151;
+}
+
+/* Content */
+.detailed-cs-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .detailed-cs-card {
+    padding: 25px;
+  }
+
+  .detailed-cs-title {
+    font-size: 28px;
+  }
+
+  .detailed-student-name {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detailed-case-studies-section {
+    padding: 50px 0;
+  }
+
+  .detailed-cs-header {
+    margin-bottom: 40px;
+  }
+
+  .detailed-cs-title {
+    font-size: 22px;
+  }
+
+  .detailed-cs-description {
+    font-size: 14px;
+  }
+
+  .detailed-cs-card {
+    padding: 20px;
+  }
+
+  .detailed-cs-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}

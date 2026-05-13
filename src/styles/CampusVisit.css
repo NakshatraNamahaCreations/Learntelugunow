@@ -1,0 +1,325 @@
+/* Campus Visit Section Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap');
+
+:root {
+  --navy: #2a8a73;
+  --soft-gray: #f8f9fa;
+  --accent: #07294d;
+  --muted: #07294d;
+  --orange: #ff9800;
+  --green: #2a8a73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* MAIN GRID */
+.campus-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.campus-section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.campus-section-title {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--green) 0%, var(--green) 40%, var(--orange) 60%, var(--orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.campus-section-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.campus-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* LEFT SIDE */
+.left {
+  background: linear-gradient(135deg, var(--green) 0%, var(--orange) 100%);
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+.gallery-window {
+  width: 100%;
+  max-width: 520px;
+  margin: auto;
+  margin-left: 100px;
+  position: relative;
+  z-index: 10;
+  transform: translateX(120px);
+}
+
+.gallery-viewport {
+  width: 600px;
+  height: 380px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  left:-80px;
+  scroll-behavior: smooth;
+  border: 6px solid #e8e8e8;
+  background: #fff;
+  position: relative;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.track {
+  display: flex;
+  gap: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.track img {
+  width: 100%;
+  min-width: 100%;
+  height: 380px;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+  scroll-snap-align: start;
+}
+
+/* PREV/NEXT */
+.controls {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.controls button {
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.controls button:hover {
+  opacity: 0.7;
+}
+
+.controls span {
+  color: #fff;
+}
+
+/* RIGHT SIDE */
+.right {
+  background: var(--soft-gray);
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 60px 70px 100px;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.6) 100%);
+  z-index: 0;
+}
+
+.right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(42, 138, 115, 0.1) 0%, rgba(255, 152, 0, 0.1) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.right > * {
+  position: relative;
+  z-index: 1;
+}
+
+.right .col-lg-8 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.flexible-learning {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--muted);
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.right h1 {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--green) 0%, var(--green) 40%, var(--orange) 60%, var(--orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+.divider {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green) 0%, var(--orange) 100%);
+  margin: 20px 0;
+  border: none;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.watch {
+  font-size: 44px;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--green) 0%, var(--green) 40%, var(--orange) 60%, var(--orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.play-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.play-row:hover {
+  color: var(--accent);
+}
+
+.playIcon {
+  width: 35px;
+  height: 35px;
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, var(--green) 0%, var(--orange) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.play-row:hover .playIcon {
+  background: linear-gradient(135deg, var(--orange) 0%, var(--green) 100%);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .campus-section {
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    padding: 40px;
+  }
+
+  .track img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .right h1 {
+    font-size: 36px;
+  }
+
+  .watch {
+    font-size: 32px;
+  }
+
+  .left {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right {
+    padding: 30px 20px;
+  }
+
+  .right h1 {
+    font-size: 28px;
+  }
+
+  .watch {
+    font-size: 28px;
+  }
+
+  .play-row {
+    font-size: 18px;
+  }
+}
